@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Random Number Game</title>
+    <title>#Guess</title>
 </head>
 <body>
-    <h1>Random Number Game</h1>
-    <p> This page will generate a random number from 1-100. Enter your guess in the popup!</p>
-    <button onclick="randNumGame()">Guess me!</button>
+    <h1>#Guess</h1>
+    <p>The game will generate a random number from 1-100. Your objective is simple: guess the number.<br><em>Are you up for the challenge?</em><p>
+    <button id="newGameBtn">Begin</button>
+    <div id="modalContainer" class="modal">
+        <div class="modalContent">
+            <span class="close">&times;</span>
+            <h3>Challenge accepted. Let's begin &#8628;</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nihil laboriosam atque iure reprehenderit libero, aperiam consectetur nobis, provident, amet quibusdam incidunt quos fugiat impedit natus! Aspernatur culpa iusto mollitia?</p>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

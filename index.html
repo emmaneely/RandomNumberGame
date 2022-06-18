@@ -10,12 +10,15 @@
 <body>
     <h1>#Guess</h1>
     <p>The game will generate a random number from 1-100. Your objective is simple: guess the number.<br><em>Are you up for the challenge?</em><p>
-    <button id="newGameBtn">Begin</button>
+    <button id="beginBtn">Begin</button>
     <div id="modalContainer" class="modal">
-        <div class="modalContent">
+        <div id="modalContent">
             <span class="close">&times;</span>
             <h3>Challenge accepted. Let's begin &#8628;</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nihil laboriosam atque iure reprehenderit libero, aperiam consectetur nobis, provident, amet quibusdam incidunt quos fugiat impedit natus! Aspernatur culpa iusto mollitia?</p>
+            <hr>
+            <p id="gameText">These are the rules blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+            <input id="guessInput" type="number" min="1" max="100">
+            <button id="guessBtn" onclick="guessGame()">Guess</button>
         </div>
     </div>
     <script src="app.js"></script>

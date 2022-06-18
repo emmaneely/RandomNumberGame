@@ -34,10 +34,29 @@ button {
     background-color: rgb(53, 30, 41);
     color: rgb(251, 254, 251);
     border: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     padding: 10px 25px;
     font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+    background-color: rgb(37, 68, 65);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(251, 254, 251);
+    border: 2px solid rgb(53, 30, 41);
+    border-radius: 3px;
+}
+
+input:active {
+    border: 1px solid rgb(37, 68, 65);
 }
 
 .modal {
@@ -63,7 +82,7 @@ button {
     opacity: 1;
 }
 
-.modalContent {
+#modalContent {
     background-color: rgb(251, 254, 251);
     margin: 10% auto;
     padding: 20px;
@@ -75,7 +94,6 @@ button {
     text-align: center;
 }
 
-/* The Close Button */
 .close {
     color: #aaa;
     float: right;

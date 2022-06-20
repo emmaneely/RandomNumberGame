@@ -9,38 +9,15 @@ function guessGame() {
     guess = parseInt(guessString);
 
     if (answer == guess) {
-        modalContent.insertBefore(foundNum, gameText);
+        gameText.textContent = "You got it! Congrats!";
     } else if (answer > guess) {
-        modalContent.insertBefore(tooLow, gameText);
+        gameText.textContent = "Too low...";
     } else if (answer < guess) {
-        modalContent.insertBefore(tooHigh, gameText);
+        gameText.textContent = "Too high...";
     } else {
-        modalContent.insertBefore(nonNum, gameText);
+        gameText.textContent = "That's not a number...";
     }
 };
-
-
-
-// function testGame() {
-//     do {
-//         guess = prompt("Guess a number from 1-100");
-//         if (answer == guess) {
-//             console.log("You got it right!!");
-//             alert("You got it right!!");
-//             break;
-//         } else if (answer > guess) {
-//             console.log("That's too low...");
-//             alert("That's too low...");
-//         } else if (answer < guess) {
-//             console.log("That's too high...");
-//             alert("That's too high...");
-//         } else {
-//             console.log("Hmm... I don't think that's a number");
-//             alert("Hmm... I don't think that's a number");
-//         }
-//     } while (answer != guess);
-// };
-
 
 const beginBtn = document.getElementById("beginBtn");
 const close = document.getElementsByClassName("close")[0];
@@ -59,18 +36,22 @@ guessBtn.addEventListener("click", () => {
     document.getElementById("guessInput").value = "";
 })
 
-let tooHigh = document.createElement("p");
-tooHigh.textContent = "Too high";
+// let tooHigh = document.createElement("p");
+// tooHigh.textContent = "Too high";
+// tooHigh.setAttribute('id','gameText');
 // modalContent.insertBefore(tooHigh, gameText);
 
-let tooLow = document.createElement("p");
-tooLow.textContent = "Too low";
+// let tooLow = document.createElement("p");
+// tooLow.textContent = "Too low";
+// tooLow.setAttribute('id','gameText');
 // modalContent.insertBefore(tooLow, gameText);
 
-let foundNum = document.createElement("p");
-foundNum.textContent = "You got it! Congrats!";
+// let foundNum = document.createElement("p");
+// foundNum.textContent = "You got it! Congrats!";
+// foundNum.setAttribute('id','gameText');
 // modalContent.insertBefore(foundNum, gameText);
 
-let nonNum = document.createElement("p");
-nonNum.textContent = "That's not a number";
+// let nonNum = document.createElement("p");
+// nonNum.textContent = "That's not a number";
+// nonNum.setAttribute('id','gameText');
 // modalContent.insertBefore(nonNum, gameText);
